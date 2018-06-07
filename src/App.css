@@ -8,42 +8,129 @@
 }
 .App-portrait {
   width: 160px;
+  float: left;
+  padding-bottom: 20px;
 }
 
 .App-header {
   background-color: #222;
-  height: 180px;
-  padding: 20px;
+  height: 227px;
+  padding-top: 20px;
   padding-bottom: 0px;
   color: white;
   align-content: left;
   text-align: left;
 }
-
-.NavBar {
-  width: 100%;
-  text-align: center;
-  border-top: 2px;
-  display: inline;
-  padding: 10px;
+h1, .h1 {
+  display: block;
+  margin-top: 20px;
 }
-.NavBar ul {
+
+h2, .h2 {
+  font-size: 20px;
+}
+
+.container {
+    width: 100%;
+    margin-left: 15px;
+}
+
+.collapse:not(.show) {
+  display: list-item;
+}
+
+.NavBarTool {
+  width: 100%;
+}
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+    padding:0;
+    margin-top: 15px;
+    width: 100%;
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li {
+  padding-right: 45px;
+}
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.navbar-nav {
+  flex-direction: row;
+}
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+/* .nav {
+  display: none;
+} */
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* .NavBar ul {
   text-align:center;
   display:inline;
 }
 .NavBar ul li {
   display:inline;
-}
+} */
 
-.NavBar ul li a {
+/* .NavBar ul li a {
   color: #FEFEFF;
   padding: 10px;
-}
+} */
 
-.App-title {
-  font-size: 1.5em;
-  text-align: left;
-}
+/* .NavBar ul li a {
+  dropdown: hover;
+} */
+
 
 .App-intro {
   font-size: 50px;
