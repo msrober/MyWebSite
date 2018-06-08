@@ -1,27 +1,29 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import NavBar from './Components/NavBar'
-import HomePage from './Components/HomePage'
-import Profiles from './Components/Profiles'
+import Header from './Components/Header'
+import Home from './Home';
+import About from './Components/About';
+import Contact from './Components/Contact';
+import Personal from './Components/Personal';
+import School from './Components/School';
+import Work from './Components/Work';
+import { BrowserRouter, Route } from 'react-router-dom';
 import './App.css';
 
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-
-        <header className="App-header">
-          <Profiles />
-          <img src="./images/MitchellCloseUp.png" className="App-portrait" alt="Portrait" />
-          <h1>Mitchell Roberts</h1>
-          <h2>Software Engineer</h2>
-          <NavBar />
-        </header>
-        <div className = "state">
-          <HomePage />
+      <BrowserRouter>
+        <div className="App">
+          <Header />
+          <Route exact path="/" component={Home} />
+          <Route path="/About" component={About} />
+          <Route path="/Contact" component={Contact} />
+          <Route path="/Personal" component={Personal} />
+          <Route path="/School" component={School} />
+          <Route path="/Work" component={Work} />
         </div>
-      </div>
+      </BrowserRouter>
     );
   }
 }

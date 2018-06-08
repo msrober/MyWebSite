@@ -1,28 +1,37 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+
 
 
 class NavBar extends React.Component {
-  handleSelect(eventKey) {
-    //event.preventDefault();
-    alert(`selected ${eventKey}`);
-  }
-
   render() {
     return (
       <div className = 'navbar'>
-        <a href="./" className='homeLink'>Home</a>
-        <a href="#about" className='aboutLink'>About</a>
-        <div class="dropdown">
-          <button class="dropbtn">Projects
-            <i class="arrowDropDown fa fa-caret-down"></i>
+        <Link to = {'/'} className='homeLink'>
+          Home
+        </Link>
+        <Link to = {'/About'} className='aboutLink'>
+          About
+        </Link>
+        <div className="dropdown">
+          <button className="dropbtn">Projects
+            <i className="arrowDropDown fa fa-caret-down"></i>
           </button>
-          <div class="dropdown-content">
-            <a href="#">School</a>
-            <a href="#">Personal</a>
-            <a href="#">Work</a>
+          <div className="dropdown-content">
+            <Link to = './School' className='SchoolLink'>
+              School
+            </Link>
+            <Link to = './Personal' className='PersonalLink'>
+              Personal
+            </Link>
+            <Link to = './Work' className='Work'>
+              Work
+            </Link>
           </div>
         </div>
-        <a href="#contact">Contact Me</a>
+        <Link to = './Contact' className='contactMe'>
+          Contact Me
+        </Link>
       </div>
     );
   }
