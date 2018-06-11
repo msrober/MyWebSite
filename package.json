@@ -1,27 +1,19 @@
 {
-  "name": "prjectmanager",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "ajv": "^6.5.0",
-    "bootstrap": "^4.1.1",
-    "font-awesome": "^4.7.0",
-    "git": "^0.1.5",
-    "jquery": "^3.3.1",
-    "npm-git-install": "^0.3.0",
-    "popper": "^1.0.1",
-    "popper.js": "^1.14.3",
-    "react": "^16.4.0",
-    "react-bootstrap": "^0.32.1",
-    "react-dom": "^16.4.0",
-    "react-router": "^4.3.1",
-    "react-router-dom": "^4.3.1",
-    "react-scripts": "1.1.4"
+  "name": "react-app-express",
+  "version": "1.0.0",
+  "description": "Integrating Node express backend with react app",
+  "author": {
+    "name": "Mitchell Roberts"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "client": "cd client && yarn start",
+    "server": "nodemon server.js",
+    "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\""
+  },
+  "dependencies": {
+    "express": "^4.16.3"
+  },
+  "devDependencies": {
+    "concurrently": "^3.5.1"
   }
 }
