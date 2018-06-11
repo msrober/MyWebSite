@@ -10,11 +10,11 @@ import { BrowserRouter, Route } from 'react-router-dom';
 import './App.css';
 
 
-class App extends Component {
+class App extends Component {  
   state = {
     response: ''
   };
-
+  //runs automatically when the components mounted
   componentDidMount() {
     this.callApi()
       .then(res => this.setState({ response: res.express }))
