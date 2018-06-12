@@ -6,9 +6,9 @@ class Home extends Component {
   render() {
     return (
       <div className="App">
-        <p>
-          Home Page
-        </p>
+        <h1 className = "HomeHeader">
+          Welcome!
+        </h1>
       </div>
     );
   }
