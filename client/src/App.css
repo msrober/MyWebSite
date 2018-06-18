@@ -35,6 +35,41 @@ p {
   color: white;
 }
 
+.resumeBtn {
+  font-family: 'Open Sans', sans-serif;
+  border-radius: 4px;
+  background-color: #A94C40;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 16px;
+  padding: 10px;
+  cursor: pointer;
+  margin: 0 auto;
+  margin-top: 50px;
+  align-items: center;
+  justify-content: center;
+}
+
+.phone_info {
+  font-family: 'Open Sans', sans-serif;
+  margin-top: 20px;
+  margin-bottom: 20px
+}
+
+.email_info {
+  font-family: 'Open Sans', sans-serif;
+
+}
+
+.line {
+  border: none;
+  height: 1px;
+  width: 25%;
+  color: White; /* old IE */
+  background-color: White; /* Modern Browsers */
+}
+
 .App-header {
   background-color: #222;
   height: 208px;
@@ -43,7 +78,10 @@ p {
   color: white;
   align-content: left;
   text-align: left;
-  background-image: url("/../images/carbon-fiber.jpg");
+  background-image: url("/../images/gradient.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
 .Profiles {
   float: right;
@@ -64,6 +102,7 @@ h2, .h2 {
 
 .HomeHeader {
   color: white;
+  margin-top: 50px;
   font-family: Quantify;
 }
 .container {
@@ -133,8 +172,24 @@ h2, .h2 {
   background-color: #918165;
 }
 
-span {
+.aboutNode {
+  border-style: solid;
+  border-width: 1px;
+  border-color: White;
+  background: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: auto;
+  width: 50%;
+  margin-top: 50px;
+}
 
+.AboutP {
+  letter-spacing: 1px;
+  font-family: 'Open Sans', sans-serif;
+  margin-left: 15px;
+  margin-right: 15px;
+  text-align: left;
+  text-indent: 30px;
 }
 
 /* Dropdown content (hidden by default) */
@@ -149,6 +204,15 @@ span {
 
 }
 
+.fa-phone, .fa-envelope {
+  color: white;
+  size: 10px;
+  margin-right: 10px;
+}
+
+ .info {
+   display: inline;
+ }
 /* Links inside the dropdown */
 .dropdown-content a {
   float: none;

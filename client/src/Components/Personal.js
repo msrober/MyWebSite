@@ -4,9 +4,9 @@ class Personal extends Component {
   render() {
     return (
       <div className="PersonalPage">
-        <p>
-          Personal Page
-        </p>
+      <h1 className = "HomeHeader">
+        Personal Projects
+      </h1>
       </div>
     );
   }

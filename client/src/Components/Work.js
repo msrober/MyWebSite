@@ -4,9 +4,9 @@ class Work extends Component {
   render() {
     return (
       <div className="WorkPage">
-        <p>
-          Work Page
-        </p>
+      <h1 className = "HomeHeader">
+        Work Projects
+      </h1>
       </div>
     );
   }

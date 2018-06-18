@@ -8,9 +8,6 @@ class NavBar extends React.Component {
     return (
       <div className = 'navbar'>
         <Link to = {'/'} className='homeLink'>
-          Home
-        </Link>
-        <Link to = {'/About'} className='aboutLink'>
           About
         </Link>
         <div className="dropdown">

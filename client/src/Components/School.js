@@ -4,9 +4,9 @@ class School extends Component {
   render() {
     return (
       <div className="SchoolPage">
-        <p>
-          School Page
-        </p>
+      <h1 className = "HomeHeader">
+        School Projects
+      </h1>
       </div>
     );
   }
