@@ -10,6 +10,10 @@ class NavBar extends React.Component {
         <Link to = {'/'} className='homeLink'>
           About
         </Link>
+        <Link to = './Personal' className='contactMe'>
+          Projects
+        </Link>
+        {/*
         <div className="dropdown">
           <button className="dropbtn">Projects
             <i className="arrowDropDown fa fa-caret-down"></i>
@@ -26,6 +30,7 @@ class NavBar extends React.Component {
             </Link>
           </div>
         </div>
+        */}
         <Link to = './Contact' className='contactMe'>
           Contact Me
         </Link>

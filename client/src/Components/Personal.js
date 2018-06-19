@@ -18,12 +18,7 @@ class Personal extends Component {
         repData: response.data,
       });
     })
-    // axios.get('https://api.github.com/repos/msrober/MyWebSite').then(response => {
-    //   console.log(response);
-    //   // this.setState({
-    //   //   repData: response.data,
-    //   // });
-    // })
+
   }
 
   RepoList() {
@@ -31,12 +26,13 @@ class Personal extends Component {
     return this.state.repData.map((data) => {
         return (
           <div key = {`RepoElement_${counter++}`} className = {"repository " + data.name}>
-            <p className="title">{data.name}</p>
+            <a href={"https://github.com/msrober/" + data.name} className="title" aria-hidden="true">{data.name}</a>
             <p className="language">{data.language}</p>
           </div>
         )
       })
   }
+
 
   render() {
     return (

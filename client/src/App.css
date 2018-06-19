@@ -19,7 +19,14 @@
 .title {
   font-size: 20px;
   font-family: 'Open Sans', sans-serif;
+  text-decoration: none;
+  color: white;
 }
+.title:hover {
+  color: #A94C40;
+  text-decoration: underline;
+}
+
 .github {
   font-size: 40px;
   margin-right: 20px;
@@ -178,6 +185,8 @@ h2, .h2 {
   font-size: 16px;
   color: white;
   text-align: center;
+  margin: 0 auto;
+  display: inline-block;
   text-decoration: none;
 }
 .aboutLink, .homeLink, .contactMe {
@@ -205,6 +214,9 @@ h2, .h2 {
 }
 .dropbtn {
   float: left;
+}
+Link {
+  display:inline;
 }
 
 /* Add a red background color to navbar links on hover */
