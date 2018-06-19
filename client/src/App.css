@@ -15,9 +15,20 @@
   float: left;
   padding-bottom: 20px;
 }
+
+.title {
+  font-size: 20px;
+  font-family: 'Open Sans', sans-serif;
+}
 .github {
   font-size: 40px;
   margin-right: 20px;
+  color: white;
+  text-decoration: none;
+}
+
+.projectgithub {
+  font-size: 30px;
   color: white;
   text-decoration: none;
 }
@@ -105,9 +116,38 @@ h2, .h2 {
   margin-top: 50px;
   font-family: Quantify;
 }
+
 .container {
     width: 100%;
     margin-left: 15px;
+}
+
+.title_bar {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+}
+
+.gitcontainer {
+    width: 100%;
+}
+
+.repository {
+  background: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 300px;
+  height: 200px;
+  margin-left: 50px;;
+  margin-bottom: 10px;;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px 20px 20px;
+  display: inline-block;
+}
+
+.Repos {
+  margin-top: 40px;
+  display: inline-block;
+  width: 100%;
 }
 
 .collapse:not(.show) {
@@ -181,6 +221,12 @@ h2, .h2 {
   margin: auto;
   width: 50%;
   margin-top: 50px;
+}
+
+.ProjectsInfo {
+  font-family: 'Open Sans', sans-serif;
+  margin-top: 10px;
+  margin-bottom: 50px;
 }
 
 .AboutP {
