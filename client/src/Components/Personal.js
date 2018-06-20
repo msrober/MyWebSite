@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import Report1 from '../files/My Reports/Large Format Report.pdf'
+import Report2 from '../files/My Reports/Joel Lobaugh Records Report.pdf'
+import Report3 from '../files/My Reports/Indigo (Press Report).pdf'
+
 
 class Personal extends Component {
   constructor(props) {
@@ -32,6 +36,40 @@ class Personal extends Component {
         )
       })
   }
+  ReportList() {
+        return (
+          <div className = "Reports">
+            <div key = "Report1" className = "report">
+              <p className="Reporttitle">Large Format Report</p>
+              <form method="get" action={Report1}>
+                <button type = "submit" className = "resumeBtn" >View Report</button>
+              </form>
+            </div>
+            <div key = "Report2" className = "report">
+              <p className="Reporttitle">Customer Report</p>
+              <form method="get" action={Report2}>
+                <button type = "submit" className = "resumeBtn" >View Report</button>
+              </form>
+            </div>
+            <div key = "Report3" className = "report">
+              <p className="Reporttitle">Press Report</p>
+              <form method="get" action={Report3}>
+                <button type = "submit" className = "resumeBtn" >View Report</button>
+              </form>
+            </div>
+          </div>
+        )
+  }
+// FileList() {
+//   const testFolder = './test/';
+//   const fs = require('fs');
+//
+//   fs.readdir(testFolder, (err, files) => {
+//     files.forEach(file => {
+//       console.log(file);
+//     });
+//   })
+// }
 
 
   render() {
@@ -55,7 +93,22 @@ class Personal extends Component {
         {this.RepoList()}
         </div>
       </section>
-
+      <h1 className = "HomeHeader ReportHeader">
+        Reports
+      </h1>
+      <p className = "ProjectsInfo">
+      Check out some of my Reports I have built.
+      </p>
+      <section className="content_section local">
+        <div className="mainBlock">
+          <div className="localcontainer">
+            <p className="title_bar">
+            <i className="fas fa-file-pdf"></i> Jasper Reports
+              </p>
+          </div>
+        </div>
+        {this.ReportList()}
+      </section>
       </div>
     );
   }

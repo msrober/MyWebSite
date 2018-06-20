@@ -27,6 +27,23 @@
   text-decoration: underline;
 }
 
+.Reporttitle {
+  font-size: 20px;
+  font-family: 'Open Sans', sans-serif;
+  text-decoration: none;
+  color: white;
+}
+
+.local {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+
+.fa-file-pdf{
+  margin-right: 10px;
+  color: white;
+}
 .github {
   font-size: 40px;
   margin-right: 20px;
@@ -68,11 +85,18 @@ p {
   align-items: center;
   justify-content: center;
 }
+.resumeBtn:hover {
+  background-color: #873D33;
+}
 
 .phone_info {
   font-family: 'Open Sans', sans-serif;
   margin-top: 20px;
   margin-bottom: 20px
+}
+
+.Reports{
+  height: 200px;
 }
 
 .email_info {
@@ -124,6 +148,10 @@ h2, .h2 {
   font-family: Quantify;
 }
 
+.ReportHeader {
+  margin-top: 100px;
+}
+
 .container {
     width: 100%;
     margin-left: 15px;
@@ -132,13 +160,14 @@ h2, .h2 {
 .title_bar {
   font-family: 'Open Sans', sans-serif;
   font-size: 20px;
+  color: #918165;
 }
 
 .gitcontainer {
     width: 100%;
 }
 
-.repository {
+.repository, .report {
   background: rgba(0, 0, 0, 0.5);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   width: 300px;
@@ -151,7 +180,11 @@ h2, .h2 {
   display: inline-block;
 }
 
-.Repos {
+.report {
+  height: auto;
+}
+
+.Repos, .Reports {
   margin-top: 40px;
   display: inline-block;
   width: 100%;
@@ -294,6 +327,49 @@ Link {
 
 .App-intro {
   font-size: 50px;
+}
+
+/* entire container, keeps perspective */
+.flip-container {
+	perspective: 1000px;
+}
+	/* flip the pane when hovered */
+	.flip-container:hover .flipper, .flip-container.hover .flipper {
+		transform: rotateY(180deg);
+	}
+
+.flip-container, .front, .back {
+	width: 320px;
+	height: 480px;
+}
+
+/* flip speed goes here */
+.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	backface-visibility: hidden;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+	z-index: 2;
+	/* for firefox 31 */
+	transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+	transform: rotateY(180deg);
 }
 
 @keyframes App-logo-spin {
