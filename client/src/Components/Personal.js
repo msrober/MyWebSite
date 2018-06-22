@@ -6,23 +6,63 @@ import Report3 from '../files/My Reports/Indigo (Press Report).pdf'
 
 
 class Personal extends Component {
+
   constructor(props) {
     super();
-
+    // this.urls = [];
     this.state = {
       repData: [],
       repCommits: [],
     };
   }
-
+//https://github.com/msrober/MyWebSite/commits/d98fa7bcd2d6edefeb89e65452d4a35a8f785e91
   componentDidMount() {
     axios.get('https://api.github.com/users/msrober/repos').then(response => {
       console.log(response);
       this.setState({
         repData: response.data,
       });
+      // this.getRepoInfo(this.state.repData);
     })
+  }
 
+  // getRepoInfo(repData) {
+  //   console.log(repData.length);
+  //   this.state.repData.map((data) => {
+  //       for (var i = 0; i < 1; i++) {
+  //         var repo = data.name;
+  //         console.log(repo);
+  //         var http = "https://api.github.com/repos/msrober/" + repo + "/commits";
+  //         axios.get(http).then(repoResponse => {
+  //           console.log(repoResponse);
+  //           this.state.repCommits[i] = repoResponse.data;
+  //         })
+  //       }
+  //   })
+  // }
+  //
+  // addtoArray() {
+  //   var counter = 0
+  //   this.state.repData.map((data) => {
+  //     var http = "https://api.github.com/repos/msrober/" + data.name + "/commits";
+  //     this.urls[counter++] = http;
+  //   })
+  //   console.log("Here " + this.state.repData.length);
+  //   var counter2 = 0;
+  //   this.urls.map((data) => {
+  //     axios.get(this.urls[counter2]).then(response => {
+  //       console.log(response);
+  //       this.state.repCommits[counter2++] = response.data.length;
+  //     })
+  //     console.log(this.state.repCommits[counter2]);
+  //   })
+  // }
+
+  getCommits(repoName) {
+    var http = "https://api.github.com/repos/msrober/" + repoName + "/commits";
+    axios.get(http).then(response => {
+      console.log(response);
+    })
   }
 
   RepoList() {
@@ -32,6 +72,7 @@ class Personal extends Component {
           <div key = {`RepoElement_${counter++}`} className = {"repository " + data.name}>
             <a href={"https://github.com/msrober/" + data.name} className="title" aria-hidden="true">{data.name}</a>
             <p className="language">{data.language}</p>
+            {this.getCommits(data.name)}
           </div>
         )
       })
