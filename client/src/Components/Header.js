@@ -11,8 +11,8 @@ class Header extends React.Component {
         <header className="App-header">
           <Profiles />
           <img src="./images/MitchellCloseUp.png" className="App-portrait" alt="Portrait" />
-          <h1>Mitchell Roberts</h1>
-          <h2>Software Engineer</h2>
+          <h1 className = "HName">Mitchell Roberts</h1>
+          <h2 className = "HDegree">Software Engineer</h2>
           <NavBar />
         </header>
       </div>

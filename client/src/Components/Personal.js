@@ -58,12 +58,12 @@ class Personal extends Component {
   //   })
   // }
 
-  getCommits(repoName) {
-    var http = "https://api.github.com/repos/msrober/" + repoName + "/commits";
-    axios.get(http).then(response => {
-      console.log(response);
-    })
-  }
+  // getCommits(repoName) {
+  //   var http = "https://api.github.com/repos/msrober/" + repoName + "/commits";
+  //   axios.get(http).then(response => {
+  //     console.log(response);
+  //   })
+  // }
 
   RepoList() {
     var counter = 0;
@@ -72,7 +72,6 @@ class Personal extends Component {
           <div key = {`RepoElement_${counter++}`} className = {"repository " + data.name}>
             <a href={"https://github.com/msrober/" + data.name} className="title" aria-hidden="true">{data.name}</a>
             <p className="language">{data.language}</p>
-            {this.getCommits(data.name)}
           </div>
         )
       })
@@ -111,7 +110,6 @@ class Personal extends Component {
 //     });
 //   })
 // }
-
 
   render() {
     return (

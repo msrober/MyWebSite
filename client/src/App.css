@@ -171,7 +171,7 @@ h2, .h2 {
   background: rgba(0, 0, 0, 0.5);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   width: 300px;
-  height: 200px;
+  height: auto;
   margin-left: 50px;;
   margin-bottom: 10px;;
   display: flex;
@@ -372,7 +372,75 @@ Link {
 	transform: rotateY(180deg);
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    body {
+      height: 736px;
+      background-image: none;
+    }
+    .App-portrait {
+        display: none;
+    }
+    .App-header {
+      margin-top: 0px;
+      padding-top: 10px;
+      height: auto;
+      width: auto;
+    }
+    a.homeLink:hover, a.aboutLink:hover, .contactMe:hover {
+
+    }
+    .HName {
+      margin-left: 10px;
+      font-size: 25px;
+      margin-bottom: 0px;
+      margin-top: 0;
+    }
+    .HDegree {
+      margin-left: 10px;
+      font-size: 15px;
+      margin-top: 5px;
+    }
+    .github  {
+
+    }
+    .navbar {
+      margin: 0 auto;
+      padding-left: 0px;
+      display: flex;
+      align-items: center;
+      width: auto;
+    }
+    .aboutNode {
+      width: 80%;
+    }
+    .AboutP, .ProjectsInfo {
+      font-size: 70%;
+    }
+    .ProjectsInfo {
+      font-size: 14px;
+    }
+    .HomeHeader {
+      font-size: 40px;
+      margin-top: 30px;
+    }
+    .resumeBtn {
+      margin-top: 40px;
+      margin-bottom: 20px;
+    }
+    .Repos {
+      margin: 0 auto;
+    }
+    .repository {
+      margin-left: 0px;
+      height: auto;
+    }
+    .content_section {
+      margin: 0 auto;
+    }
+    .report {
+      margin-left: 0px;
+      height: auto;
+    }
+
 }
