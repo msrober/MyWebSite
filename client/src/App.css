@@ -42,32 +42,32 @@
 
 .fa-file-pdf{
   margin-right: 10px;
-  color: white;
+  color: #011F26;
 }
 .github {
   font-size: 40px;
   margin-right: 20px;
-  color: white;
+  color: #7695A8;
   text-decoration: none;
 }
 
 .projectgithub {
   font-size: 30px;
-  color: white;
+  color: #011F26;
   text-decoration: none;
 }
 
 .linkedinIcon {
   font-size: 40px;
   margin-right: 20px;
-  color: white;
+  color: #7695A8 !important;
 }
 
 .arrowDropDown {
   padding-left: 5px;
 }
 p {
-  color: white;
+  color: #011F26;
 }
 
 .resumeBtn {
@@ -108,19 +108,20 @@ p {
   border: none;
   height: 1px;
   width: 25%;
-  color: White; /* old IE */
-  background-color: White; /* Modern Browsers */
+  color: #011F26; /* old IE */
+  background-color: #011F26; /* Modern Browsers */
 }
 
 .App-header {
-  background-color: #222;
+  /* background: linear-gradient(to bottom, #7695A8, #004459); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-color: #FFFFF9;
   height: 208px;
   padding-top: 20px;
   padding-bottom: 0px;
-  color: white;
+  color: #011F26;
   align-content: left;
   text-align: left;
-  background-image: url("/../images/gradient.jpg");
+  /* background-image: url("/../images/gradient.jpg"); */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -135,15 +136,17 @@ h1, .h1 {
   display: block;
   margin-top: 20px;
   font-family: Quantify;
+  margin-bottom: 5px;
 }
 
 h2, .h2 {
+  margin-top: 5px;
   font-size: 20px;
-  color: #918165;
+  color: #99453A;
 }
 
 .HomeHeader {
-  color: white;
+  color: #011F26;
   margin-top: 50px;
   font-family: Quantify;
 }
@@ -160,15 +163,19 @@ h2, .h2 {
 .title_bar {
   font-family: 'Open Sans', sans-serif;
   font-size: 20px;
-  color: #918165;
+  color: #A64B31;
 }
 
 .gitcontainer {
     width: 100%;
 }
 
+.jobTracking {
+  margin-top: 40px;
+}
+
 .repository, .report {
-  background: rgba(0, 0, 0, 0.5);
+  background: #7695A8;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   width: 300px;
   height: auto;
@@ -204,7 +211,7 @@ h2, .h2 {
 /* Navbar container */
 .navbar {
   overflow: hidden;
-  background-color: #333;
+  background-color: #004459;
   font-family: Arial, Helvetica, sans-serif;
   padding-left:37px;
   margin-top: 18px;
@@ -254,14 +261,14 @@ Link {
 
 /* Add a red background color to navbar links on hover */
 .navbar a.homeLink:hover, a.aboutLink:hover, .contactMe:hover, .dropdown:hover .dropbtn {
-  background-color: #918165;
+  background-color: #7695A8;
 }
 
 .aboutNode {
   border-style: solid;
   border-width: 1px;
   border-color: White;
-  background: rgba(0, 0, 0, 0.5);
+  background: #7695A8;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   margin: auto;
   width: 50%;
@@ -281,6 +288,7 @@ Link {
   margin-right: 15px;
   text-align: left;
   text-indent: 30px;
+  color: white;
 }
 
 /* Dropdown content (hidden by default) */
@@ -296,7 +304,7 @@ Link {
 }
 
 .fa-phone, .fa-envelope {
-  color: white;
+  color: #011F26;
   size: 10px;
   margin-right: 10px;
 }
