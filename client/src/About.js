@@ -4,7 +4,22 @@ import pdf from './files/Mitchell Roberts Resume.pdf'
 class About extends Component {
   render() {
     return (
-      <div>
+      <div className = "MePage">
+        <div className="Skills">
+        <p className="Skills_header">Skills</p>
+          <ul className="SkillsTree">
+          <li>Languages
+            <ul>
+              <li>Java</li>
+              <li>C/C++</li>
+                <li>Javscript (React,Node,MongoDB)</li>
+                <li>SQL</li>
+                <li></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div className = "BioNode">
         <h1 className = "HomeHeader">
           A Little About Me
         </h1>
@@ -22,6 +37,7 @@ class About extends Component {
              <button type = "submit" className = "resumeBtn" >View My Resume</button>
           </form>
           </div>
+      </div>
     );
   }
 }
